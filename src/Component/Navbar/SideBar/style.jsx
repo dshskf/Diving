@@ -22,8 +22,12 @@ export const SideBarContainer = styled.div`
   align-items: center;
   z-index: 2;
   overflow: hidden;
-  animation: ${slideAnimation} 0.5s 1;  
+  animation: ${slideAnimation} 0.5s 1 both;  
   min-width: 20rem;
+
+  @media (max-width:400px) {
+    min-width: 15rem;
+  }
 `;
 
 export const SideBarItem = styled.div`

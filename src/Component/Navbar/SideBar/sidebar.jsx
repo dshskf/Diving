@@ -15,6 +15,8 @@ import {
 const SideBar = () => {
     const links = ["Home", "Travel", "About", "Sign-Up"]
     const { toogleHidden } = useContext(ShowSideBar)
+
+    //For onHover mouse
     const [hover, setHover] = useState(false)
     const toogleHover = () => setHover(!hover)
 

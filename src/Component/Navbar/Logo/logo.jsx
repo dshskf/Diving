@@ -6,7 +6,7 @@ import SideBar from '../SideBar/sidebar'
 const LogoPanel = () => {
     const [hidden, setHidden] = useState(false)
     const toogleHidden = () => setHidden(!hidden)
-    console.log(hidden)
+    
     return (
         <React.Fragment>
             <ShowSideBar.Provider value={{ hidden, toogleHidden }}>
